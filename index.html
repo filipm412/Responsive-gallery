@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Gallery</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+       #main-div {
+          display: flex;
+          width: 60%;
+          margin: 0 auto;
+          flex-wrap: wrap;
+          justify-content: space-between; 
+       }
+       @media screen and (max-width: 414px) {
+           #main-div {
+               width: 80%;
+               justify-content: center;
+           }
+       }
+       @media screen and (max-width: 780px) {
+           #main-div {
+               width: 80%; 
+           }
+       }
+       #main-div>div {
+          height: 130px;
+          width: 180px;
+          margin: 25px 8px 25px 8px;
+          border-radius: 10px;
+          background: url("placeholder-image.jpg"), linear-gradient(rgb(108, 162, 217) 80%, white 80%);
+          box-shadow: 0px 5px 9px -1px gray;
+          background-size: contain;
+          text-align: center;
+          line-height: 235px;
+       }
+       #heading {
+           display: flex;
+           margin: 0 auto;
+           width: 60%;
+       }
+       @media screen and (max-width: 414px) {
+           #heading { 
+           width: 80%; 
+           justify-content: center;
+           } 
+       }
+       @media screen and (max-width: 780px) {
+           #heading { 
+           width: 80%; 
+           text-align: center;
+           } 
+       }
+       #paragraph {
+           width: 60%;
+           display: flex;
+           margin: 0 auto;
+       }
+       @media screen and (max-width: 414px) {
+           #paragraph {
+           font-size: 20px; 
+           width: 90%; 
+           text-align: justify;
+           } 
+       }
+       @media screen and (max-width: 780px) {
+           #paragraph {
+           font-size: 20px; 
+           width: 80%; 
+           text-align: justify;
+           } 
+       }
+       img {
+           width: 230px;
+           height: 150px;
+           position: fixed;
+           top: 10%;
+           left: 10%;
+       }
+    </style>
+</head>
+<body>
+    <div id="heading">
+       <h1>Gallery Heading</h1>
+    </div>
+    <div id="main-div">
+        <div>Image Title</div>
+        <div>Image Title</div>
+        <div>Image Title</div>
+        <div>Image Title</div>
+        <div>Image Title</div>
+        <div>Image Title</div>
+        <div>Image Title</div>
+        <div>Image Title</div>
+        <div>Image Title</div>
+        <div>Image Title</div>
+    </div>
+    <div id="paragraph">
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nunc arcu, aliquet id odio ac, 
+        accumsan malesuada nisl. Proin ut pulvinar magna, ut venenatis lacus. Pellentesque ornare nisl ante, 
+        nec egestas quam faucibus ac. Nam pharetra, nunc in aliquam lobortis, elit mi fermentum odio, ut porta 
+        risus urna ac mi. Nulla porta purus a arcu volutpat lacinia. Lorem ipsum dolor sit amet, consectetur 
+        adipiscing elit. Mauris laoreet nulla et est dignissim faucibus quis pulvinar enim. Pellentesque enim libero, 
+        elementum a massa non, scelerisque malesuada quam. Vestibulum sagittis nisl et rhoncus vestibulum. 
+        Vivamus nec tellus congue, scelerisque urna non, tincidunt tortor.
+       </p>
+    </div>
+</body>
+</html>
